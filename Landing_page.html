@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+
+        * {
+        box-sizing: border-box;
+        }
+        body {
+        font-family: 'Open Sans', sans-serif;
+        }
+        a {
+        text-decoration: none;
+        }
+        ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
+        .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        /* Small */
+        @media (min-width: 768px) {
+        .container {
+            width: 750px;
+        }
+        }
+        /* Medium */
+        @media (min-width: 992px) {
+        .container {
+            width: 970px;
+        }
+        }
+        /* Large */
+        @media (min-width: 1200px) {
+        .container {
+            width: 1170px;
+        }
+        }
+        /* End Global Rules */
+
+        /* Start Landing Page */
+        .landing-page header {
+        min-height: 80px;
+        display: flex;
+        }
+        @media (max-width: 767px) {
+        .landing-page header {
+            min-height: auto;
+            display: initial;
+        }
+        }
+        .landing-page header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+        @media (max-width: 767px) {
+        .landing-page header .container {
+            flex-direction: column;
+            justify-content: center;
+        }
+        }
+        .landing-page header .logo {
+        color: #5d5d5d;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 20px;
+        }
+        @media (max-width: 767px) {
+        .landing-page header .logo {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        }
+        .landing-page header .links {
+        display: flex;
+        align-items: center;
+        }
+        @media (max-width: 767px) {
+        .landing-page header .links {
+            text-align: center;
+            gap: 10px;
+        }
+        }
+        .landing-page header .links li {
+        margin-left: 30px;
+        color: #5d5d5d;
+        cursor: pointer;
+        transition: .3s;
+        }
+        @media (max-width: 767px) {
+        .landing-page header .links li {
+            margin-left: auto;
+        }
+        }
+        .landing-page header .links li:last-child {
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: #FFF;
+        background-color: rgb(103, 211, 241);
+        }
+        .landing-page header .links li:not(:last-child):hover {
+        color: rgb(103, 211, 241);
+        }
+        .landing-page .content .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 140px;
+        min-height: calc(100vh - 80px);
+        }
+        @media (max-width: 767px) {
+        .landing-page .content .container {
+            gap: 0;
+            min-height: calc(100vh - 101px);
+            justify-content: center;
+            flex-direction: column-reverse;
+        }
+        }
+        @media (max-width: 767px) {
+        .landing-page .content .info {
+            text-align: center;
+            margin-bottom: 15px 
+        }
+        }
+        .landing-page .content .info h1 {
+        color: #5d5d5d;
+        font-size: 44px;
+        }
+        .landing-page .content .info p {
+        margin: 0;
+        line-height: 1.6;
+        font-size: 15px;
+        color: #5d5d5d;
+        }
+        .landing-page .content .info button {
+        border: 0;
+        border-radius: 20px;
+        padding: 12px 30px;
+        margin-top: 30px;
+        cursor: pointer;
+        color: #FFF;
+        background-color: rgb(103, 211, 241);
+        }
+        .landing-page .content .image img {
+        max-width: 100%;
+        }
+        .contact {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact input,
+        .contact textarea,
+        .contact button {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #555;
+        }
+        
+
+    </style>
+</head>
+<body>
+          <!-- Start Landing Page -->
+        <div class="landing-page">
+            <header>
+                <div class="container">
+                    <a href="#" class="logo">Landing <b>PAGE</b></a>
+                    <ul class="links">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Work</li>
+                        <li>Info</li>
+                        <li>Get Started</li>
+                    </ul>
+                </div>
+            </header>
+            <div class="content">
+                <div class="container">
+                    <div class="info">
+                        <h1>Hello, Myself Sandeep Kumar  </h1>
+                        <p>I am pursuing my Btech from quantum university. its grateful to work with codesoft, here I learn very new things about web development</p><br>
+                        <p>Thank you, to give this opportunity to me.I hope we will work together in future with another new tasks</p>
+                        <button>Know More</button>
+                    </div>
+                    <div class="image">
+                        <img src="https://ik.imagekit.io/sandeep/img1_lbd__d-R8.jpg?updatedAt=1692897844611">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+          <!-- End Landing Page -->
+</body>
+</html>
